@@ -1,11 +1,14 @@
 //Create a function with the prompt method with a message "What's your delicious order?"
-let flavors = prompt("What's your delicious order?");
-//vanilla,vanilla,vanilla,strawberry,coffee,coffee
+let flavorsInput = prompt("What's your delicious order?");
+// Receive the input of flavors the user wishes to order as a string.
+// output :"vanilla,vanilla,vanilla,strawberry,coffee,coffee,strawberry,coffee,coffee"
+console.log(flavorsInput);
 
-//Receive the input of flavors the user wishes to order as a string.
+// The user's input string is split into an array of strings. Remove the commas separation from the string input.
+let flavors = flavorsInput.split(",");
+console.log(flavors);
 
-//Remove the commas separation from the string input and turn into an array of objects.
+//Store the result of this input on a variable named "customerOrder".
+let customerOrder = flavors;
 
-// Store the result of this input on a variable named "customerOrder".
-
-//Do a loop through the array and count each flavor inputted.
+// //Do a loop through the array and count each flavor inputted. It should count how many orders there are of each flavor.
